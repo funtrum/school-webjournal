@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="chats.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="chats.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Football - Forums</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="mhead">Journal</div>
+        <div class="mname">Arutunov Nick<br>10-B Class</div>
+        <div class="item" onclick="window.location.assign('../diary')">Diary</div>
+        <div class="item" onclick="window.location.assign('../forums')">Forums</div>
+        <div class="item active" onclick="window.location.assign('../chats')">Chats</div>
+        <div class="item" onclick="window.location.assign('../marks')">All Marks</div>
+        <div class="item" onclick="window.location.assign('../summary')">Summary Marks</div>
+        <div class="item" onclick="quit()">Quit</div>
+    </div>
+    
+    <div class="mob_menu">
+        <div class="mhead">Journal</div>
+        <div class="mname">Arutunov Nick<br>10-B Class</div>
+        <div class="item">
+            <a class="bug" onclick="window.location.assign('../diary')">Diary</a>
+        </div>
+        <div class="item mediummob" onclick="window.location.assign('../forums')">Forums</div>
+        <div class="item active rubber" onclick="window.location.assign('../chats')">Chats</div>
+        <div class="item bigmob" onclick="window.location.assign('../marks')">All Marks</div>
+        <div class="item" id="other" onclick="$('#dropdown').slideToggle(1500);">
+            Other
+            <div id="dropdown">
+              <div class="dditem" id="ddf" onclick="window.location.assign('../diary')">Diary</div>
+              <div class="dditem" id="ddc" onclick="window.location.assign('../forums')">Forums</div>
+              <div class="dditem" id="dda" onclick="window.location.assign('../marks')">All Marks</div>
+              <div class="dditem" id="dds" onclick="window.location.assign('../summary')">Summary Marks</div>
+              <div class="dditem" id="ddq" onclick="quit()">Quit</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="chats">
+        <div class="selector">
+            <div class="selsection" id="01" onclick="selectChat('01');">
+               <div class="section">
+                    <div class="sname">10-A Chat</div>
+                    <div class="sdescr">18 Online</div>
+                </div>
+                <div class="sinf">14 Unread messages</div>
+                <div class="shr"></div>
+            </div>
+            <div class="selsection" id="02" onclick="selectChat('02');">
+               <div class="section">
+                    <div class="sname">10-B Chat</div>
+                    <div class="sdescr">10 Online</div>
+                </div>
+                <div class="sinf">12 Unread messages</div>
+                <div class="shr"></div>
+            </div>
+            <div class="selsection" id="03" onclick="selectChat('03');">
+               <div class="section">
+                    <div class="sname">School Chat</div>
+                    <div class="sdescr">63 Online</div>
+                </div>
+                <div class="sinf">9 Unread messages</div>
+                <div class="shr"></div>
+            </div>
+            <div class="selsection" id="04" onclick="selectChat('04');">
+               <div class="section">
+                    <div class="sname">Events Chat</div>
+                    <div class="sdescr">8 Online</div>
+                </div>
+                <div class="sinf">All messages has been read</div>
+            </div>
+        </div>
+        
+        <div class="mob_selector">
+            <div class="mob_selsection">
+                <div class="mob_sname">10-A Chat</div>
+                <div class="mob_sinf">14</div>
+            </div>
+            <div class="mob_selsection">
+                <div class="mob_sname">10-B Chat</div>
+                <div class="mob_sinf">12</div>
+            </div>
+            <div class="mob_selsection">
+                <div class="mob_sname">School Chat</div>
+                <div class="mob_sinf">9</div>
+            </div>
+            <div class="mob_selsection">
+                <div class="mob_sname">Events Chat</div>
+                <div class="mob_sinf"></div>
+            </div>
+        </div>
+        
+        <div class="chatbox">
+            <div class="postmessage">
+                <div class="cbdescr">10-A Chat</div>
+                <form action="" class="pmform">
+                    <textarea name="text" id="pmtextarea"></textarea><br>
+                    <input type="submit" class="pmbtn">
+                </form>
+            </div>
+            <div class="cbhr"></div>
+            <div class="message">
+                <div class="mesname">Student</div>
+                <div class="mcontent">Duis accumsan sagittis est feugiat suscipit. Proin ultrices nec purus venenatis malesuada. Donec cursus erat vel odio ultricies, quis interdum leo ultricies. Mauris molestie interdum viverra. Mauris dapibus maximus tortor sed accumsan. Mauris accumsan, nunc id volutpat hendrerit, nunc orci egestas tortor, quis auctor libero mauris a risus. Phasellus elementum lorem vel mauris egestas, nec volutpat ante ullamcorper. Phasellus congue vel metus in fringilla. Phasellus bibendum, dolor et efficitur venenatis, sem urna ultricies lacus, aliquet efficitur diam nibh in nunc. In vel turpis sapien. Vivamus vel hendrerit orci. Donec dui enim, vehicula non condimentum at, facilisis eu dui. Quisque mattis fermentum ligula ac sagittis. Nullam id fermentum augue.</div>
+            </div>
+            <div class="cbhr"></div>
+            <div class="message">
+                <div class="mesname">Teacher</div>
+                <div class="mcontent">Aliquam erat volutpat. Fusce dolor metus, malesuada sit amet rhoncus luctus, faucibus vel dolor. Nam sit amet quam ante. In vitae ultrices eros. In volutpat, libero at volutpat scelerisque, ex massa aliquet felis, lobortis elementum nisl lectus sit amet metus. In quis scelerisque quam. Sed pellentesque aliquet dui.</div>
+            </div>
+            <div class="cbhr"></div>
+            <div class="message">
+                <div class="mesname">Student</div>
+                <div class="mcontent">Vivamus interdum in risus eu dapibus. Nulla at purus imperdiet, maximus diam non, tincidunt nisl. Nunc volutpat congue fermentum. Proin iaculis sapien cursus, fringilla ante id, scelerisque justo. Duis gravida ligula a eros interdum, in semper sapien sollicitudin.</div>
+            </div>
+            <div class="cbhr"></div>
+            <div class="message">
+                <div class="mesname">Student</div>
+                <div class="mcontent">Proin condimentum tortor orci, at vehicula tellus hendrerit vitae. Nullam vestibulum euismod justo eu viverra. Mauris tellus purus, blandit quis venenatis ac, sodales vitae nisl. Ut tempus lobortis finibus. Nulla eget dictum dui. </div>
+            </div>
+            <div class="cbhr"></div>
+            <div class="message">
+                <div class="mesname">Student</div>
+                <div class="mcontent">Vivamus dictum magna quis iaculis malesuada. Nam sit amet arcu dapibus, hendrerit lacus et, sodales velit. Suspendisse porttitor condimentum odio, ut cursus quam lobortis ut.</div>
+            </div>
+            <div class="cbhr"></div>
+            <div class="message">
+                <div class="mesname">Student</div>
+                <div class="mcontent">When we beginning the match?</div>
+            </div>
+            <div class="cbhr"></div>
+            <div class="message">
+                <div class="mesname">Student</div>
+                <div class="mcontent">Vestibulum viverra consequat lorem nec consectetur. Morbi non porttitor tortor, feugiat pellentesque risus. Sed mauris purus, consequat quis iaculis non, fermentum eu metus. Donec euismod, nisi nec feugiat posuere, urna nisl placerat diam, eu blandit ligula arcu sit amet velit. Duis semper orci condimentum erat viverra pretium. Donec ac facilisis ligula, eu dictum ante. Quisque vel elit sapien. In hac habitasse platea dictumst.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
