@@ -5,10 +5,10 @@ session_start();
 
 $login = $_POST['login'];
 $password = hash_hmac('sha256', $_POST['pass'], '9c664c119a68c5154bccbf1ee348a205');
-$host="mysql.hostinger.ru";
-$dbname="u377256951_new";
-$user="u377256951_s";
-$pass="x25P#eGz]E:Qr5jHk9";
+$host="YOUR_DB_HOST";
+$dbname="YOUR_DB_NAME";
+$user="YOUR_DB_USER";
+$pass="YOUR_DB_PASS";
 
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);  
