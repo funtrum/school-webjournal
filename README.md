@@ -16,3 +16,6 @@
 **site**: http://wjrnl.esy.es/
 **login**: student
 **password**: student
+
+##iOS Application
+iOS App has already been **developed** and will be uploaded to GitHub soon
