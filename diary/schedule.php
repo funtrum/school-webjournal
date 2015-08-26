@@ -18,10 +18,10 @@ if($_SESSION['role']=='3' AND empty($_GET['week'])) {
 
 $login = $_POST['login'];
 $password = md5($_POST['pass']);
-$host="mysql.hostinger.ru";
-$dbname="u377256951_new";
-$user="u377256951_s";
-$pass="x25P#eGz]E:Qr5jHk9";
+$host="YOUR_DB_HOST";
+$dbname="YOUR_DB_NAME";
+$user="YOUR_DB_USER";
+$pass="YOUR_DB_PASS";
 
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);  
