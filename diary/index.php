@@ -15,7 +15,7 @@ $login = $_POST['login'];
 $password = md5($_POST['pass']);
 $host="YOUR_DB_HOST";
 $dbname="YOUR_DB_NAME";
-$user="YOR_DB_USER";
+$user="YOUR_DB_USER";
 $pass="YOUR_DB_PASS";
 
 try {
