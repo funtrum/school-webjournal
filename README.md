@@ -1,6 +1,6 @@
 # School Web-Journal
 
-##Requirements
+## Requirements
 - **PHP**
 - **MySQL**
 - **Xcode** (Optional)
